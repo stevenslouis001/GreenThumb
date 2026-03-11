@@ -1,0 +1,34 @@
+/*
+filename: style.css
+author: Evan Lanza
+student id last four: 8804
+cs username: elanza05
+*/
+
+.generator{
+    text-align:center;
+    width:400px;
+    margin:auto;
+    padding:20px;
+    border-style: solid;
+    border-width: 5px;
+    color: #224A35;
+    background-color: #62A17F;
+}
+
+.plant-display img{
+    width:200px;
+    transition: transform 0.8s ease;
+    border-style: solid;
+}
+
+.spin{
+    transform: rotate(360deg);
+}
+
+button{
+    padding:10px 15px;
+    margin:10px;
+    cursor:pointer;
+    background-color: #517561;
+}
