@@ -3,12 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <title>Review Form</title>
+
+    <link rel="stylesheet" href="../Stylesheet/Review.css">
 </head>
 <body>
     <!-- Your content goes here -->
-    <h1>Hello, World!</h1>
-    <script src="scripts.js"></script>
+    <h1>Customer Review Form</h1>
+    <script lang="javascript">
+    cg1 = new Array("", "Quality", "Customer Service", "Experience", "Price",)
+
+    cg2_label = new Array("Very Satisfied")
+
+    cg3_label = new Array("Satisfied")
+
+    cg4_label = new Array("Somewhat Satisfied")
+
+    cg5_label = new Array("Not Satisfied")
+
+    document.write("<table border='2'><th colspan='5'>Review Form</th><tr>")
+
+
+    for (a=0;a<cg1.length;a++) {
+
+        if (a == 0) {
+      document.write("<td>" + cg1[a] + "</td>")
+      document.write("<td>" + cg2_label + "</td>")
+      document.write("<td>" + cg3_label + "</td>")
+      document.write("<td>" + cg4_label + "</td>")
+      document.write("<td>" + cg5_label + "</td></tr>")
+        } else {
+            document.write("<td>" + cg1[a] + "</td>");
+            document.write("<td> <input type='radio' name='row" + a + "'></td>");
+            document.write("<td> <input type='radio' name='row" + a + "'></td>");
+            document.write("<td> <input type='radio' name='row" + a + "'></td>");
+            document.write("<td> <input type='radio' name='row" + a + "'></td></tr>");
+        }
+
+    }
+
+    document.write("</table>")
+
+
+    </script>
+
+    <main>
+        <form>
+            
+        </form>
+
+
+    </main>
+
 </body>
 </html>
