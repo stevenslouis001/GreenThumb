@@ -5,6 +5,7 @@ student id last four: 8804
 cs username: elanza05
 */
 
+/* Main container for the plant generator interface */
 .generator{
     text-align:center;
     width:400px;
@@ -16,16 +17,20 @@ cs username: elanza05
     background-color: #62A17F;
 }
 
+/* Targets images inside the plant-display container */
 .plant-display img{
     width:200px;
     transition: transform 0.8s ease;
+    /* Smooth animation when a transform (like rotation) occurs */
     border-style: solid;
 }
 
+/* Class used to trigger a rotation animation */
 .spin{
     transform: rotate(360deg);
 }
 
+/* Styles applied to all button elements */
 button{
     padding:10px 15px;
     margin:10px;

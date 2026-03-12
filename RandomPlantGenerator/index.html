@@ -11,30 +11,46 @@ cs username: elanza05
     <meta charset="UTF-8">
     <title>Plant Generator</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Links an external CSS file that controls 
+	 the styling/layout of the page -->
 </head>
-
 <body>
-
 <div class="generator">
+<!-- Main container that holds the 
+     ntire plant generator interface -->
 
     <h2>🌿 Random Plant Generator</h2>
+    <!-- Page heading/title shown to the user -->
 
     <div class="plant-display">
-        <img id="plantImage" src="images/snakeplant.jpeg" alt="Plant">
-    </div>
+    <!-- Container specifically for displaying the plant image -->
 
+        <img id="plantImage" src="https://png.pngtree.com/png-vector/20230918/ourmid/pngtree-tea-leaf-png-png-image_10117348.png" alt="Plant">
+	<!-- Image element that shows the generated plant.
+             - id="plantImage" allows JavaScript to change the image dynamically
+             - src="link" is the default image before generating
+             - alt="Plant" is alternative text for accessibility -->
+    </div>
     <h3 id="plantName">Click Generate</h3>
+    <!-- Displays the plant's name.
+         JavaScript will update this text when a new plant is generated -->
 
     <p id="plantDescription">
         Discover a plant perfect for your space!
     </p>
+    <!-- Paragraph where the plant description will appear.
+         Also updated dynamically with JavaScript -->
 
     <button id="generateBtn">Generate Plant</button>
+    <!-- Button the user clicks to randomly generate a plant.
+         JavaScript will attach a click event to this button -->
 
     <button id="productBtn">View Product</button>
-
+    <!-- Button that likely links to or opens a product page for
+	 the displayed plant -->
 </div>
-
 <script src="script.js"></script>
+<!-- Links the external JavaScript file that controls the page's behavior
+     (generating plants, updating images/text, button actions, etc.) -->
 </body>
 </html>
