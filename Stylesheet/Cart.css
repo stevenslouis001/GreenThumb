@@ -1,0 +1,39 @@
+body{
+font-family: Arial;
+background-color: #f3f8f2;
+text-align:center;
+}
+
+.cart-item{
+background:white;
+margin:10px auto;
+padding:15px;
+width:300px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+button{
+background:#2e8b57;
+color:white;
+border:none;
+padding:10px 15px;
+margin-top:10px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#256d46;
+}
+
+input{
+display:block;
+margin:10px auto;
+padding:8px;
+width:250px;
+}
+
+.checkout-btn{
+margin-top:20px;
+}
