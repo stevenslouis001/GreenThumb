@@ -292,9 +292,28 @@
 
   <script>
     let selectedRating = 0;
-    //const reviews = []; old reviews array before adding localstorage
-    const reviews = JSON.parse(localStorage.getItem('reviews') || '[]').map(r => ({ ...r, date: new Date(r.date) }));
+    let reviews = [];
     const stars = document.querySelectorAll('.star');
+
+    const API_URL = 'https://www.cs.umb.edu/~hdeblois/cs410/longproj02/t4/GreenThumb/JSON/Reviews.json';
+
+    async function loadReviews() {
+      try {
+        const res = await fetch(API_URL);
+        const data = await res.json();
+        const serverReviews = (data.reviews || []).map(r => ({ ...r, date: new Date(r.date) }));
+        const localReviews = JSON.parse(localStorage.getItem('reviews') || '[]').map(r => ({ ...r, date: new Date(r.date) }));
+
+        const serverKeys = new Set(serverReviews.map(r => r.product + r.date.getTime() + r.text));
+        const uniqueLocal = localReviews.filter(r => !serverKeys.has(r.product + r.date.getTime() + r.text));
+
+        reviews = [...uniqueLocal, ...serverReviews];
+        reviews.sort((a, b) => b.date - a.date);
+      } catch (e) {
+        reviews = JSON.parse(localStorage.getItem('reviews') || '[]').map(r => ({ ...r, date: new Date(r.date) }));
+      }
+      renderReviews();
+    }
 
     stars.forEach(star => {
       star.addEventListener('mouseover', () => litStars(+star.dataset.val));
@@ -314,8 +333,17 @@
       if (!selectedRating)  { shake('starRow');     return; }
       if (!text)            { shake('reviewText');  return; }
 
-      reviews.unshift({ product, rating: selectedRating, text, date: new Date() });
-      localStorage.setItem('reviews', JSON.stringify(reviews)); // save reviews to localstorage
+      const newReview = { product, rating: selectedRating, text, date: new Date() };
+      reviews.unshift(newReview);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+
+      
+      fetch(API_URL, {
+         method: 'POST',
+         headers: { 'Content-Type': 'application/json' },
+         body: JSON.stringify(newReview)
+       }).then(() => localStorage.removeItem('reviews'));
+
       renderReviews();
       resetForm();
       flashSuccess();
@@ -366,7 +394,7 @@
       return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
 
-    if (reviews.length) renderReviews();
+    loadReviews();
   </script>
 
 </body>
