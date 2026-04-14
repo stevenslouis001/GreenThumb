@@ -19,12 +19,38 @@
       --border:    #c2deba;
     }
 
+    .navbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: center; gap: 6px;
+      background: var(--cream);
+      border-bottom: 1.5px solid var(--border);
+      padding: 12px 20px;
+      box-shadow: 0 2px 12px rgba(45,90,39,0.08);
+    }
+    .navbar a {
+      font-family: 'Nunito', sans-serif;
+      font-size: 13px; font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 6px 16px;
+      border-radius: 20px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .navbar a:hover {
+      background: #eaf3de;
+      color: var(--moss);
+    }
+    .navbar a.active {
+      background: var(--moss);
+      color: #eaf3de;
+    }
+
     body {
       font-family: 'Nunito', sans-serif;
       background: var(--parchment);
       color: var(--forest);
       min-height: 100vh;
-      padding: 60px 20px;
+      padding: 100px 20px 60px;
       background-image:
         radial-gradient(ellipse at 10% 20%, rgba(122,171,110,0.15) 0%, transparent 50%),
         radial-gradient(ellipse at 90% 80%, rgba(45,90,39,0.1) 0%, transparent 50%);
@@ -56,7 +82,7 @@
     .divider-line { width: 40px; height: 1.5px; background: var(--mint); border-radius: 2px; }
     .divider svg { display: block; }
 
-/* form fard */
+/* form card */
     .form-card {
       background: var(--cream);
       border: 1.5px solid var(--border);
@@ -135,7 +161,7 @@
     }
     .success-msg.show { display: flex; animation: fadeIn 0.3s ease; }
 
-/* compleeted reviews */
+/* completed reviews */
     .reviews-header {
       display: flex; align-items: center; gap: 12px; margin-bottom: 24px;
     }
@@ -192,6 +218,15 @@
 </head>
 <body>
 
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="Cart.html">Shopping Cart</a>
+    <a href="Shop.html">Shop</a>
+    <a href="Checkout.html">Checkout</a>
+    <a href="About.html">About</a>
+    <a href="Review.html" class="active">Reviews</a>
+  </nav>
+
   <div class="page">
 
     <!-- header -->
@@ -213,7 +248,7 @@
       <h2>Write a Review</h2>
 
       <div class="form-group">
-        <label for="productName">Prodjct Name</label>
+        <label for="productName">Product Name</label>
         <input type="text" id="productName" placeholder="" maxlength="80"/>
       </div>
 
@@ -257,8 +292,28 @@
 
   <script>
     let selectedRating = 0;
-    const reviews = [];
+    let reviews = [];
     const stars = document.querySelectorAll('.star');
+
+    const API_URL = 'https://www.cs.umb.edu/~hdeblois/cs410/longproj02/t4/GreenThumb/JSON/Reviews.json';
+
+    async function loadReviews() {
+      try {
+        const res = await fetch(API_URL);
+        const data = await res.json();
+        const serverReviews = (data.reviews || []).map(r => ({ ...r, date: new Date(r.date) }));
+        const localReviews = JSON.parse(localStorage.getItem('reviews') || '[]').map(r => ({ ...r, date: new Date(r.date) }));
+
+        const serverKeys = new Set(serverReviews.map(r => r.product + r.date.getTime() + r.text));
+        const uniqueLocal = localReviews.filter(r => !serverKeys.has(r.product + r.date.getTime() + r.text));
+
+        reviews = [...uniqueLocal, ...serverReviews];
+        reviews.sort((a, b) => b.date - a.date);
+      } catch (e) {
+        reviews = JSON.parse(localStorage.getItem('reviews') || '[]').map(r => ({ ...r, date: new Date(r.date) }));
+      }
+      renderReviews();
+    }
 
     stars.forEach(star => {
       star.addEventListener('mouseover', () => litStars(+star.dataset.val));
@@ -278,7 +333,17 @@
       if (!selectedRating)  { shake('starRow');     return; }
       if (!text)            { shake('reviewText');  return; }
 
-      reviews.unshift({ product, rating: selectedRating, text, date: new Date() });
+      const newReview = { product, rating: selectedRating, text, date: new Date() };
+      reviews.unshift(newReview);
+      localStorage.setItem('reviews', JSON.stringify(reviews));
+
+      
+      fetch(API_URL, {
+         method: 'POST',
+         headers: { 'Content-Type': 'application/json' },
+         body: JSON.stringify(newReview)
+       }).then(() => localStorage.removeItem('reviews'));
+
       renderReviews();
       resetForm();
       flashSuccess();
@@ -328,6 +393,8 @@
     function escHtml(str) {
       return str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
+
+    loadReviews();
   </script>
 
 </body>

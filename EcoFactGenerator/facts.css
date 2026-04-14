@@ -1,0 +1,117 @@
+/*
+filename: facts.css
+author: Evan Lanza
+student id last four: 8804
+cs username: elanza05
+*/
+
+.generator {
+    text-align: center;
+    width: 400px;
+    height: 480px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f9f2;
+    color: #3B6D11;
+    border-radius: 25px;
+    border: 10px solid #c2deba;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+.fact-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 280px;
+    margin-top: 20px;
+}
+
+.text-container {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#factText {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    transition: opacity 0.5s ease;
+    font-style: italic;
+    margin: 0;
+}
+
+/* Arrow Styling */
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: #3B6D11;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px;
+    opacity: 0;
+    user-select: none;
+}
+
+.generator:hover .nav-btn {
+    opacity: 1;
+}
+
+.nav-btn:hover {
+    color: #1a3a16;
+    transform: scale(1.2);
+}
+
+/* Source Link & Button Styling */
+#sourceLink {
+    text-decoration: none;
+    position: absolute;
+    bottom: 30px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#sourceBtn {
+    border-radius: 25px;
+    padding: 10px 15px;
+    width: 180px;
+    cursor: pointer;
+    background-color: #c2deba;
+    color: #3B6D11;
+    border: 2px solid #3B6D11;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.generator:hover #sourceBtn {
+    opacity: 1;
+    visibility: visible;
+}
+
+#sourceBtn:hover {
+    background-color: #3B6D11;
+    color: #f4f9f2;
+}
+
+/* Animation Classes */
+.fade-out {
+    opacity: 0;
+}

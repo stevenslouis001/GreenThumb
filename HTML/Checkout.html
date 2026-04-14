@@ -2,14 +2,16 @@
 <html>
 <head>
 <title>Checkout</title>
-<link rel="stylesheet" href="cart.css">
+<link rel="stylesheet" href="Cart.css">
 </head>
 
 <body>
 
-<h1>Checkout </h1>
+<h1>Checkout</h1>
 
 <form id="payment-form">
+
+<h2>Contact Information</h2>
 
 <label>Full Name</label>
 <input type="text" required>
@@ -17,11 +19,61 @@
 <label>Email</label>
 <input type="email" required>
 
-<label>Shipping Address</label>
+<label>Phone Number</label>
+<input type="tel" required>
+
+<h2>Shipping Address</h2>
+
+<label>Street Address</label>
 <input type="text" required>
 
-<label>Card Number</label>
+<label>City</label>
 <input type="text" required>
+
+<label>State</label>
+<input type="text" required>
+
+<label>ZIP Code</label>
+<input type="text" required>
+
+<label>Country</label>
+<input type="text" required>
+
+<h2>Payment Method</h2>
+
+<label>
+  <input type="radio" name="payment" value="credit" required>
+  Credit Card
+</label>
+
+<label>
+  <input type="radio" name="payment" value="debit">
+  Debit Card
+</label>
+
+<label>
+  <input type="radio" name="payment" value="paypal">
+  PayPal
+</label>
+
+<div id="card-details">
+
+<h3>Card Details</h3>
+
+<label>Card Number</label>
+<input type="text">
+
+<label>Expiry Date</label>
+<input type="text" placeholder="MM/YY">
+
+<label>CVV</label>
+<input type="text">
+
+</div>
+
+<div id="paypal-info" style="display:none;">
+<p>You will be redirected to PayPal after clicking "Complete Purchase".</p>
+</div>
 
 <button type="submit">Complete Purchase</button>
 
@@ -29,7 +81,28 @@
 
 <p id="confirmation"></p>
 
+<script>
+const paymentOptions = document.querySelectorAll('input[name="payment"]');
+const cardDetails = document.getElementById('card-details');
+const paypalInfo = document.getElementById('paypal-info');
 
+paymentOptions.forEach(option => {
+  option.addEventListener('change', function() {
+    if (this.value === 'paypal') {
+      cardDetails.style.display = 'none';
+      paypalInfo.style.display = 'block';
+    } else {
+      cardDetails.style.display = 'block';
+      paypalInfo.style.display = 'none';
+    }
+  });
+});
+
+document.getElementById('payment-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  document.getElementById('confirmation').innerText = "Purchase completed successfully!";
+});
+</script>
 
 </body>
 </html>

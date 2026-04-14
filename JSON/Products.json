@@ -1,38 +1,53 @@
 {
   "products": [
     {
+      "id": 1,
       "name": "Reusable Bamboo Straw Set",
-      "image": "images/bamboo_straws.jpg",
+      "images": ["../ShopImages/bamboo_straws.jpg"],
       "short_description": "Eco-friendly bamboo straws that are reusable, biodegradable, and perfect for daily use.",
       "price": 9.99,
+      "rating": 4.7,
+      "units_sold": 842,
       "keywords": ["bamboo", "reusable", "zero-waste", "kitchen", "eco-friendly"]
     },
     {
+      "id": 2,
       "name": "Organic Cotton Tote Bag",
-      "image": "images/cotton_tote.jpg",
+      "images": ["../ShopImages/cotton_tote.jpg"],
       "short_description": "Durable and stylish tote bag made from 100% organic cotton, ideal for shopping.",
       "price": 14.99,
+      "rating": 4.8,
+      "units_sold": 1265,
       "keywords": ["organic", "cotton", "bag", "reusable", "shopping"]
     },
     {
+      "id": 3,
       "name": "Stainless Steel Water Bottle",
-      "image": "images/steel_bottle.jpg",
+      "images": ["../ShopImages/steel_bottle.jpg"],
       "short_description": "Insulated stainless steel bottle that keeps drinks cold or hot for hours.",
       "price": 19.99,
+      "rating": 4.9,
+      "units_sold": 2154,
       "keywords": ["water bottle", "reusable", "insulated", "metal", "hydration"]
     },
     {
+      "id": 4,
       "name": "Biodegradable Phone Case",
-      "image": "images/phone_case.jpg",
+      "images": ["../ShopImages/phone_case.jpg"],
       "short_description": "Compostable phone case made from plant-based materials to reduce plastic waste.",
       "price": 24.99,
+      "rating": 4.6,
+      "units_sold": 973,
       "keywords": ["phone case", "biodegradable", "compostable", "eco", "accessories"]
     },
     {
+      "id": 5,
       "name": "Solar Powered Charger",
-      "image": "images/solar_charger.jpg",
+      "images": ["../ShopImages/solar_charger.jpg"],
       "short_description": "Portable solar charger for powering devices on the go using renewable energy.",
       "price": 29.99,
+      "rating": 4.5,
+      "units_sold": 687,
       "keywords": ["solar", "charger", "renewable", "energy", "portable"]
     }
   ]

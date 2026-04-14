@@ -1,0 +1,29 @@
+filename: Eco_and_Plant_facts.txt
+author: Evan Lanza
+student id last four: 8804
+cs username: elanza05
+
+Eco Fun Facts:
+https://www.eesi.org/articles/view/data-centers-and-water-consumption
+* The nation’s 5,426 data centers consume roughly 449 million gallons of
+  water per day and 163.7 billion gallons annually (as of 2021).
+https://usa.oceana.org/our-campaigns/plastic/
+* An estimated 33 billion pounds of plastic enter the marine environment
+  every year — that’s roughly equivalent to dumping two garbage trucks
+  full of plastic into the oceans every minute.
+https://www.un.org/en/exhibits/exhibit/in-images-plastic-forever
+* Plastic waste can take anywhere from 20 to 500 years to decompose, and
+  even then, it never fully disappears; it just gets smaller and smaller.
+https://oceana.org/press-releases/report-switching-to-reusable-packaging-could-eliminate-1-trillion-single-use-plastic-bottles-and-cups/
+* 10-percentage point increase in reusable beverage packaging by 2030
+  could eliminate over 1 trillion single-use plastic bottles and cups and
+  prevent up to 153 billion of these containers from entering our world’s
+  oceans and waterways.
+https://projectcleanwater.org/5-reasons-to-opt-for-reusable-water-bottles/
+* The U.S. alone uses nearly 50 million plastic water bottles each year.
+* Of the plastic water bottles purchased in the U.S., only 23% are recycled.
+* It’s estimated that a $20 reusable water bottle will save you $6,180 in
+  five years.
+
+Plants and Facts:
+* 

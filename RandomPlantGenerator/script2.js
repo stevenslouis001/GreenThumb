@@ -11,7 +11,7 @@ const plants = [
 {
     name: "Snake Plant",
 /*    image: "https://png.pngtree.com/png-clipart/20250108/original/pngtree-stylish-snake-plant-for-indoor-decor-png-image_18954841.png", */
-    image: "snakeplant",
+    image: "./images/snakeplant.jpeg",
     description: "Great for air purification and extremely low maintenance.",
     link: "snakeplant-product.html"
 },
