@@ -6,9 +6,11 @@ cs username: elanza05
 */
 
 /* Main container for the plant generator interface */
+
 .generator{
     text-align:center;
-    width:400px;
+    width: 400px;
+    height: 500px;
     margin:auto;
     padding:20px;
     border-style: solid;
@@ -23,7 +25,7 @@ cs username: elanza05
 .plant-display img{
     width: 200px;
     height: 250px;
-    object-fit: contain;
+    object-fit: cover;
     transition: transform 0.8s ease;
     /* Smooth animation when a transform (like rotation) occurs */
     border-style: solid;
@@ -52,3 +54,14 @@ button{
 
     border-color: #3B6D11;
 }
+
+#plantDescription {
+    margin: 15px 30px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.latin {
+    font-style: italic;
+}
+

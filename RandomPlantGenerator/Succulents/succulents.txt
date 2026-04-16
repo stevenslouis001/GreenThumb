@@ -1,0 +1,284 @@
+filename: succulents.txt
+author: Evan Lanza
+student id last four: 8804
+cs username: elanza05
+
+Source: https://www.ftd.com/blog/types-of-succulents
+
+Popular Indoor Succulents:
+
+Burro's Tail (sedum morganianum):
+- Also known as the donkey tail plant, this succulent is one of the
+  easiest plants to propagate and care for, which makes it a popular
+  houseplant. The burro’s tail was given its name because of its ability
+  to grow up to four inches long with a shape that resembles a tail.
+  This species happens to be a cactus and although all cacti are succulents,
+  not all succulents are cacti. This succulent grows best indoors, placed
+  in a well-drained container, where its long stems can drape down off of
+  the edges of the pot.
+
+* A trailing succulent known for its long, tail-like stems and easy
+  propagation.
+
+- https://cdn.shopify.com/s/files/1/0550/5207/5167/files/Talking-of-plants-sedum-burrito_600x600.jpg?v=1643039465
+- https://talkingofplants.com/blogs/houseplant-and-succulent-care-and-advice/how-to-propagate-a-burro-s-tail-plant-by-leaf-cutting
+
+Crown of Thorns (euphorbia milii):
+- The crown of thorns is a great houseplant because it adjusts well to dry
+  indoor environments and room temperatures. For the best care and results,
+  place this succulent near a window where it can get about three to four
+  hours of sunlight a day. The crown of thorns is very lenient when it comes
+  to missed waterings, but make sure to only water the plant when its soil is
+  completely dry. In Thailand there is a legend that the number of flowers
+  that bloom on a crown of thorns predicts the future of the plant-keeper.
+  So, make sure to take good care of this one!
+
+* A hardy, low-maintenance plant that tolerates dryness and blooms with
+  proper sunlight.
+
+- https://www.logees.com/cdn/shop/files/euphorbia_sunset_splendor.jpg?v=1751919826
+- https://www.logees.com/products/crown-of-thorns-sunset-splendor?srsltid=AfmBOopf7MK98IxaYEgUoGy6L3PIXYsr6POT4BTbZqnfBhPEMrvWnM9R
+
+Flaming Katy (kalanchoe blossfeldiana):
+- The flaming katy is a common houseplant that is native to Madagascar. It
+  prefers temperatures from 60 to 85 degrees, and is extremely sensitive to
+  the cold which is why it is best suited for indoors. The flaming katy grows
+  best in clay pots that have holes at the bottom for drainage. They prefer
+  well-lit areas and will produce more buds and flowers when given eight to
+  10 hours of sun a day. In late autumn and early winter this succulent produces
+  buds with four petals that can be an array of colors from dark reds to golds
+  and whites. It looks great as a table centerpiece or a desk plant.
+
+* A colorful flowering succulent that thrives indoors with bright light and
+  warmth.
+
+- https://cdn.mos.cms.futurecdn.net/GXegu7ijFDqAYkJk4L99JC.jpg
+- https://www.gardeningknowhow.com/houseplants/kalanchoe/growing-flaming-katy.htm
+
+Jade Plant (crassula ovata):
+- The jade plant is similar to a bonsai plant in the way that it grows and is
+  maintained. It has a thick trunk with branches that jut out like a miniature
+  tree. This succulent has thick, shiny, dark green leaves that grow into an
+  oval shape. Some varieties of the jade plant develop a red color at the tip of
+  the leaf. Once the plant matures and if the conditions are right, the jade plant
+  can develop beautiful white or pink flowers that bloom in the shape of a star.
+
+* A tree-like succulent prized for its thick leaves and bonsai-style appearance.
+
+- https://hips.hearstapps.com/hmg-prod/images/jade-plant-lucky-plant-money-plant-or-money-tree-royalty-free-image-1691772399.jpg?crop=0.668xw:1.00xh;0.167xw,0&resize=1200:*
+- https://www.housebeautiful.com/lifestyle/gardening/a44795251/jade-plant-indoors-care/
+
+Aloe Vera (aloe vera):
+- Aloe vera is a variety of houseplant that is most known for its medical benefits.
+  It has been grown in tropical climates for many years and cultivated for its
+  medicinal purposes. You can use the healthy compounds of the aloe vera plant to
+  ease scrapes and burns, so it is a great plant to have around the house. This
+  succulent can be found in ointments for burns, skin lotion, drinks and cosmetics.
+  It can also be used for decorative purposes as an indoor plant. This plant has
+  thick, pointed leaves that are usually a green-gray color. The leaves are variegated
+  with spots of white that stretch out directly from the plant’s base.
+
+* A popular medicinal plant valued for its soothing gel used on burns and skin.
+
+- https://www.almanac.com/sites/default/files/styles/or/public/image_nodes/aloe-vera-white-pot_sunwand24-ss_edit_0.jpg?itok=uOJaHAeR
+- https://www.almanac.com/plant/aloe-vera
+
+Panda Plant (kalanchoe tomentosa):
+- The panda plant is one of the most interesting types of indoor succulents because
+  of its small and fuzzy leaves. The velvety appearance of its leaves and brownish-red
+  markings on its edges are what earned it the name of the panda plant. They can live
+  for many years indoors and although this type of succulent can flower in the right
+  circumstances, it rarely does. Because of the panda plant’s small size and soft
+  texture, it looks great in children’s rooms or in hanging planters.
+
+* A small, fuzzy-leaved succulent admired for its soft texture and unique look.
+
+- https://www.anniesannuals.com/cdn/shop/files/Kalanchoetomentosa2.png?v=1773499753&width=1445
+- https://www.anniesannuals.com/products/kalanchoe-tomentosa?srsltid=AfmBOoobKGqUJ8sSk0F5LE64xeAdVXLIA0K5NApY8OfRtKiPUQc3DXXy
+
+Pincushion Cactus (mammillaria crinita):
+- The pincushion plant is of the cactus variety and has pointy spikes covering its
+  exterior. It is native to Mexico, but has also been found in some southwest areas
+  of the United States. This succulent belongs to the mammillaria family, which consists
+  of over 250 species of cacti. The Latin word mammillaria means “nipple” and refers to
+  the tube-like features that protrude out of its exterior. The pincushion is a miniature
+  cactus that usually does not grow taller than six inches and produces vibrant blooms
+  that add a  desert vibe to your home.
+
+* A compact, spiky cactus known for its round shape and bright blooms.
+
+- https://cdn11.bigcommerce.com/s-oqm1pc/images/stencil/1280x1280/products/3967/13682/mam_crinita__17251.1592514763.jpg?c=3
+- https://mountaincrestgardens.com/mammillaria-crinita/?srsltid=AfmBOopFASx7nVQxW_xOgAm4shKtxWz6fdh2N2c9NJoN3MJdDB1-SLAH
+
+Roseum (sedum spurium):
+- The roseum plant is a low-growing succulent that only gets to be about four to six
+  inches tall. It is a fast grower that works great in containers or planters on a
+  windowsill. In the summer, the roseum develops clusters of light-pink star flowers
+  that can add a pop of color to your home decor. It can also add texture to a floral
+  arrangement. This succulent prefers full sun to partial shade, so we recommend placing
+  it on a windowsill that gets a decent amount of light.
+
+* A fast-growing, low plant that adds color with pink star-shaped flowers.
+
+- https://www.wilsonbrosgardens.com/assets/images/sedum-spurium-tricolor-stonecrop-2.jpg
+- https://www.wilsonbrosgardens.com/sedum-spurium-tricolor-stonecrop-5k-pint.html
+
+Snake Plant (sansevieria trifasciata):
+- Native to West Africa, the snake plant is one of the easiest succulents to cultivate.
+  It can be neglected for long periods of time and still maintain its fresh look. This
+  plant has long, variegated leaves in different shades of green. It is one of the most
+  tolerant types of indoor succulents and can survive in rooms with low light and little
+  water. NASA research says this plant can even improve the air quality in your home by
+  removing toxins and pollutants while you sleep!
+
+* An extremely hardy plant known for surviving low light and improving air quality.
+
+- https://littleprinceplants.com/bv-wp-content/uploads/2024/01/Sansevieria-Gabriella.jpg
+- https://littleprinceplants.com/our-plants/plant-solutions/beau-chateau/sansevieria-gabriella-snake-plant/
+
+Zebra Plant (haworthia fasciata):
+- The zebra plant can grow between five and six inches tall and wide. It does not take
+  up a lot of room and does not require much care, so it works well as a houseplant.
+  The zebra plant gets its name from the white variegated stripes on its leaves. These
+  striking leaves point out from its stem in different directions. This plant has
+  shallow roots and is best grown in smaller pots. The zebra plant produces bright
+  yellow, cone-shaped flower heads that last about a week. They are dainty, slow-growing
+  and have an eccentric appearance. They make great gifts and decor for a shelf or desk.
+
+* A compact, low-care succulent recognized for its striped, decorative leaves.
+
+- https://images.immediate.co.uk/production/volatile/sites/10/2023/08/2048x1365-Haworthia-SEO-GettyImages-1407338403-d88b930.jpg?quality=90&resize=940,627
+- https://www.gardenersworld.com/house-plants/haworthia/?srsltid=AfmBOoqcEy5FmFfZVxhWr5RHEL96spS9lRpj2BoXgn9JQAzJ4kUnnjJD
+
+Popular Outdoor Succulents:
+
+Hens-and-Chicks (sempervivum tectorum):
+- Sempervivum means “live forever,” which makes this succulent perfect for those that
+  don’t have a natural knack for growing. The hens-and-chicks succulent can propagate
+  very quickly and produce multiple offspring called “chicks”. With over 3,000 different
+  species, this sempervivum species comes in a wide array of colors that you can mix and
+  match in your garden.
+
+* A resilient, easy-to-grow succulent perfect for people without a natural knack for
+  gardening.
+
+- https://kellogggarden.com/wp-content/uploads/2021/02/Hens-and-Chicks-Plants.jpg
+- https://kellogggarden.com/blog/growing/succulents/hens-and-chicks-plants-care-tips-more/
+
+Stonecrop (sedum spp.):
+- The stonecrop succulent comes in a variety of colors from bright green and pink to
+  silver and blue. There are two main types of sedums- tall sedums and creeping sedums.
+  The tall sedums have long stems that grow to be between one and three feet tall. They
+  are known for sprouting colorful flower clusters that look great in a summer garden.
+  The creeping sedums grow along the ground and are usually used in rock gardens, rock
+  walls or on roofs.
+
+* A versatile succulent group known for colorful foliage and garden-friendly growth
+  habits.
+
+- https://www.succulentsdepot.com/cdn/shop/products/20210319_170646_1800x.jpg?v=1710287286
+- https://www.succulentsdepot.com/products/sedum-dasyphyllum-corsican-stonecrop?srsltid=AfmBOoocHd41T87VkB4diIySmlywSW5QzRPSIC-R_qSAARGjG2fyIrRv&variant=37357597196452
+
+Whale’s Tongue Agave (agave ovatifolia):
+- This agave succulent was originally grown in Mexico on mountains with elevations of
+  3,700 to 7,000 feet. It has light green, flat and wide leaves that resemble that of a
+  whale’s tongue. They grow to be between two and five feet tall and about three to six
+  feet wide. Because of their large size, they are more suitable to be grown outdoors.
+  They grow to their full size when watered regularly and can produce 10 to14 feet-tall
+  flower spikes.
+
+* A large, striking plant with wide leaves suited for spacious outdoor settings.
+
+- https://www.starnursery.com/wp-content/uploads/2018/09/whalesTongueAgave2.jpg
+- https://www.starnursery.com/product/whales-tongue-agave/
+
+Ball Cactus (parodia magnifica):
+- The ball cactus is one of the most uniquely-shaped succulents because it can grow
+  between one and two feet tall with a shape that resembles a hot air balloon. However,
+  it is not quite as smooth as a balloon, with columns of spikes lining its exterior.
+  The ball cactus produces small, yellow-colored flowers that like to grow in clusters.
+  They look great on patios or as container plants within a garden. The shape and brilliant
+  blooms of this plant add a desert vibe to your garden’s aesthetic. They are most commonly
+  used in xeriscapes, which is why they make one of the most popular outdoor succulents.
+
+* A round, balloon-shaped cactus admired for its form and yellow flowers.
+
+- https://planetdesert.com/cdn/shop/products/22e909b6-af7e-5fa5-bb65-c65929eef17e.jpg?v=1659439490
+- https://planetdesert.com/products/ball-cactus-parodia-magnifica?srsltid=AfmBOooZt4O8DhwgxSH6FpaRVMfm0E2CUXeP3U8HZPKj7m_YBWi3KxGy
+
+Plush Plant (echeveria pulvinata):
+- The plush plant is covered in fine white hairs that shimmer in the sun, giving it a
+  silvery appearance. It is native to Southern Mexico and blooms gorgeous orange-yellow
+  blooms that mirror a sunset. They prefer partial shade and can be grown in the ground
+  or placed in containers within a garden. For best results, it is important that the 
+  plush plant is repotted during the warmer months. Before repotting, always make sure
+  that the soil is completely dry.
+
+* A soft, hairy succulent with a silvery glow and warm-colored blooms.
+
+- https://cdn11.bigcommerce.com/s-oqm1pc/images/stencil/1280x1280/products/5401/22174/ech_giant_mexican__60175.1654880922.jpg?c=3
+- https://mountaincrestgardens.com/echeveria-pulvinata-red-velvet/?srsltid=AfmBOopXYT5DdpRLpb7RiRHh1gm4CjYMajs0bxOo0IigJ_eJsvbDHBeU
+
+Dudleya (echeveria spp.):
+- Dudleyas are members of the echeveria genus and are t native to California. There are more
+  than 40 different varieties of this succulent, some of which are on the endangered species
+  list. They are a rosette-forming plant which means that they have a circular arrangement of
+  leaves. Most leaves have rounded edges that with good care can live up to 100 years! These
+  plants used to grow naturally on hills to avoid getting water on their leaves, so make sure
+  to avoid their leaves when watering.
+
+* A long-living rosette succulent valued for its symmetry and drought tolerance.
+
+- https://cdn.mos.cms.futurecdn.net/hRN8nujtHgPT5MLK5rYYff.jpg
+- https://www.gardeningknowhow.com/ornamental/cacti-succulents/dudleya/dudleya-succulent-care.htm
+
+Pig’s Ear (cotyledon orbiculata):
+- The pig’s ear succulent was given its name because of its thick, oval leaves that have red on
+  the edges. During late summer or early autumn, yellow and red flowers grow at the top of two-foot
+  stems and droop down. When fully mature, the pig’s ear can grow up to four feet high, making it a
+  great addition to an outdoor garden. It is best suited to dry areas like succulent beds, rock
+  gardens and even hanging baskets! This succulent does not need much water, but can take up a large
+  space, so make sure to leave a little room when planting this one in your garden.
+
+* A large succulent with thick, red-edged leaves and drooping seasonal flowers.
+
+- https://www.pickmenursery.co.za/wp-content/uploads/2023/10/Cotyledon-red-edge.jpg
+- https://www.pickmenursery.co.za/shop/plants-2/succulents/cotyledon-red-edge-pigs-ears/?srsltid=AfmBOop6l0-CPC8BySdXLRl3dpOKG-lh0nNwYEWAak8c98TK0UXnRfJQ
+
+Zwartkop (aeonium arboreum):
+- The zwartkop is also called the “black rose,” which refers to the dark burgundy color of its
+  rosette-forming leaves. In winter, this plant produces yellow flowers that create a beautiful and
+  unexpected contrast to its dark foliage. This succulent prefers full sun, which is why it grows best
+  in outdoor gardens. They are most commonly placed in flower beds or borders and like to grow together
+  in clusters.
+
+* A dramatic “black rose” succulent known for its dark foliage and bright yellow blooms.
+
+- https://idiggreenacres.com/cdn/shop/files/Succulents_Aeonium_Zwartkop_700x700.jpg?v=1715011616
+- https://idiggreenacres.com/products/aeonium-zwartkop?srsltid=AfmBOorLHlzfscQklZuRFgy5DSATDXpFi2b6wvCt1bxPpZ9a6fZnEBrt
+
+Sunburst (aeonium davidbramwellii):
+- The sunburst succulent is also called copper pinwheel because of the yellow leaves that grow in a
+  circle around its center. The sunburst is considered to be a “tri-colored” plant because of its
+  variegated green, white and yellow leaves. It is a hybrid succulent and a member of the aeonium
+  genus that is popular among outdoor succulents. It branches out with rosettes that bloom white
+  flowers in the summer. The sunburst succulent is native to the Canary Islands and can flourish
+  seaside, growing to up to two feet high.
+
+* A tri-colored rosette succulent prized for its vibrant, variegated leaves.
+
+- https://www.succulentsdepot.com/cdn/shop/products/20210425_120337_1800x.jpg?v=1638761953
+- https://www.succulentsdepot.com/products/aeonium-sunburst?srsltid=AfmBOoqzC0epdQjHBeyT69np5x5G2iZWdFAMCg7jm9vMyoAbriAnMBSg&variant=36158929830052
+
+Torch Plant (aloe aristata):
+- The leaves of this plant start off as a light green shade that turns darker in the sun. In the summer,
+  they can bloom orange blossoms atop 20-inch stems that resemble a torch. It does not have quite the
+  same medicinal benefits as its aloe vera cousin, but is unique in its ability to grow to great lengths.
+  When cared for properly, the torch plant can grow up to ten feet tall and 18 inches across. They are
+  great for brightening a garden and creating a summer vibe.
+
+* A tall-growing succulent that produces bright, torch-like orange flowers.
+
+- https://plantmaster.com/PlantMaster/FullSize/2384a.jpg
+- https://plantmaster.com/plants/eplant.php?plantnum=179638&project=62395
+
