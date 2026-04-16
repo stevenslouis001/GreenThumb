@@ -1,53 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green Thumb</title>
   <link rel="stylesheet" href="../Stylesheet/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
 </head>
-
 <body>
 
+  <div class="grid-container">
 
-<div class="grid-container">
+    <nav class="navbar">
+      <div class="logo">LOGO</div>
 
-  
-  <nav>
-    <div class="box" style="grid-area: box-1;">LOGO</div>
+      <div class="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="Shop.html">Shop</a>
+        <a href="Checkout.html">Checkout</a>
+        <a href="About.html">About</a>
+        <a href="Review.html">Reviews</a>
+      </div>
 
-    <div class="box" style="grid-area: box-2;">
-      <a href="index.html">Home</a>
-      <a href="Shop.html">Shop</a>
-      <a href="Cart.html">Cart</a>
-      <a href="About.html">About</a>
-      <a href="Review.html">Reviews</a>
-    </div>
+      <div class="nav-icons">
+        <a href="Cart.html">
+          <span class="material-symbols-outlined">shopping_cart</span>
+        </a>
+      </div>
+    </nav>
 
-    <div class="search box" style="grid-area: box-3;">
-      <input type="text" id="searchInput" placeholder="Search...">
-      <button id="searchBtn">Search</button>
-    </div>
-  </nav>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Welcome to Green Thumb</h1>
+        <p>
+          This is the homepage of our shop. Here you can browse eco-friendly options
+          to reduce waste and support a greener lifestyle
+        </p>
 
-  <div class="box" style="grid-area: box-2">
-    <section>
-      <h1>Welcome to Green Thumb</h1>
-      <p>
-        This is the homepage of our shop. Here you can browse eco-friendly options
-        to reduce waste and support a greener lifestyle
-      </p>
-      <p>
-        Use the navigation bar above to explore the different sections
-        of the site.
-      </p>
+        <div class="search">
+          <input type="text" id="searchInput" placeholder="Search...">
+          <button id="searchBtn">Search</button>
+        </div>
+      </div>
+
+      <div class="plantImg">
+        Plant Photo
+      </div>
     </section>
+
+    <section class="best-sellers">
+      <h2>Shop Our Best Sellers</h2>
+
+      <!-- Populated dynamically by Search.js -->
+      <div id="top-products" class="product-grid"></div>
+    </section>
+
+    <section class="bottom-grid">
+      <div class="info-box">
+        <h2>Fun Eco Facts</h2>
+      </div>
+
+      <div class="info-box">
+        <h2>Random Plant Generator</h2>
+      </div>
+    </section>
+
   </div>
 
-  <div class="box" style="grid-area: box-3;"></div>
-  <div class="box" style="grid-area: box-4;"></div>
-  <div class="box" style="grid-area: box-5;"></div>
-
-</div>
-
-<script src="../JavaScript/Search.js"></script>
-
+  <script src="../JavaScript/Search.js"></script>
 </body>
 </html>
