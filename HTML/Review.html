@@ -47,7 +47,7 @@
 
     body {
       font-family: 'Nunito', sans-serif;
-      background: var(--parchment);
+      background: var(--mint);
       color: var(--forest);
       min-height: 100vh;
       padding: 100px 20px 60px;
@@ -295,22 +295,16 @@
     let reviews = [];
     const stars = document.querySelectorAll('.star');
 
-    const API_URL = 'https://www.cs.umb.edu/~hdeblois/cs410/longproj02/t4/GreenThumb/JSON/Reviews.json';
+    const API_URL = 'https://www.cs.umb.edu/~hdeblois/cs410/longproj02/t4/GreenThumb/PHP/Review.php';
 
     async function loadReviews() {
       try {
         const res = await fetch(API_URL);
         const data = await res.json();
-        const serverReviews = (data.reviews || []).map(r => ({ ...r, date: new Date(r.date) }));
-        const localReviews = JSON.parse(localStorage.getItem('reviews') || '[]').map(r => ({ ...r, date: new Date(r.date) }));
-
-        const serverKeys = new Set(serverReviews.map(r => r.product + r.date.getTime() + r.text));
-        const uniqueLocal = localReviews.filter(r => !serverKeys.has(r.product + r.date.getTime() + r.text));
-
-        reviews = [...uniqueLocal, ...serverReviews];
-        reviews.sort((a, b) => b.date - a.date);
+        reviews = (data.reviews || []).map(r => ({ ...r, date: new Date(r.date) }));
       } catch (e) {
-        reviews = JSON.parse(localStorage.getItem('reviews') || '[]').map(r => ({ ...r, date: new Date(r.date) }));
+        console.error('Failed to load reviews:', e);
+        reviews = [];
       }
       renderReviews();
     }
@@ -325,7 +319,7 @@
       stars.forEach(s => s.classList.toggle('lit', +s.dataset.val <= n));
     }
 
-    function submitReview() {
+    async function submitReview() {
       const product = document.getElementById('productName').value.trim();
       const text    = document.getElementById('reviewText').value.trim();
 
@@ -333,18 +327,24 @@
       if (!selectedRating)  { shake('starRow');     return; }
       if (!text)            { shake('reviewText');  return; }
 
-      const newReview = { product, rating: selectedRating, text, date: new Date() };
-      reviews.unshift(newReview);
-      localStorage.setItem('reviews', JSON.stringify(reviews));
+      const newReview = { product, rating: selectedRating, text, date: new Date().toISOString() };
 
-      
-      fetch(API_URL, {
-         method: 'POST',
-         headers: { 'Content-Type': 'application/json' },
-         body: JSON.stringify(newReview)
-       }).then(() => localStorage.removeItem('reviews'));
+      try {
+        const res = await fetch(API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(newReview)
+        });
+        if (!res.ok) throw new Error('Server returned ' + res.status);
+        //reload reviews from the server so the list is in sync
+        await loadReviews();
+      } catch (e) {
+        console.error('Failed to save review:', e);
+        //still show it locally so the user sees feedback
+        reviews.unshift({ ...newReview, date: new Date(newReview.date) });
+        renderReviews();
+      }
 
-      renderReviews();
       resetForm();
       flashSuccess();
     }
@@ -354,7 +354,7 @@
       document.getElementById('reviewCount').textContent = reviews.length;
 
       if (!reviews.length) {
-        list.innerHTML = '<div class="empty-state"><div class="empty-icon">&#127807;</div>No reviews yet — be the first to leave one!</div>';
+        list.innerHTML = '<div class="empty-state"><div class="empty-icon">&#127807;</div>No reviews yet. Be the one to get this party started.</div>';
         return;
       }
 
