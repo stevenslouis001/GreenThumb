@@ -14,11 +14,24 @@ const app = express()
 
 connectToDB()
 
+const allowedOrigins = [
+    'https://www.cs.umb.edu',
+    'http://localhost:3000',
+    'http://localhost:5500'
+]
+
 app.use(cors({
-    origin: process.env.CLIENT_URL,
+    origin: function(origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH']
 }))
+
 
 app.use(express.json())
 app.use(cookieParser())
