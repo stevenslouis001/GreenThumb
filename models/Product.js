@@ -6,7 +6,8 @@ const productSchema = new mongoose.Schema({
     required: true,
     trim: true
   },
-  description: {
+  images: [String],
+  short_description: {
     type: String,
     trim: true
   },
@@ -15,9 +16,19 @@ const productSchema = new mongoose.Schema({
     required: true,
     min: 0
   },
+  rating: {
+    type: Number,
+    default: 0,
+    min: 0,
+    max: 5
+  },
+  units_sold: {
+    type: Number,
+    default: 0
+  },
+  keywords: [String],
   category: {
     type: String,
-    required: true,
     trim: true
   },
   stock: {
@@ -25,8 +36,7 @@ const productSchema = new mongoose.Schema({
     required: true,
     default: 0,
     min: 0
-  },
-  images: [String]
+  }
 }, { timestamps: true });
 
 module.exports = mongoose.model('Product', productSchema);
